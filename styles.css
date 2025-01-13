@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --color-text-dark: #1a1a1a;
+  --color-text-hover: #088178;
+  --color-background: #e3e6f3;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Global Styles */
+
+/* h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+} */
+
+/* h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+} */
+/* 
+h4 {
+  font-size: 20px;
+  color: #222;
+} */
+
+/* h6 {
+  font-weight: 700;
+  font-size: 12px;
+} */
+
+/* p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+} */
+
+/* .section-p1 {
+  padding: 40px 80px;
+} */
+
+/* .section-m1 {
+  margin: 40px 0;
+} */
+
+/* header */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: var(--color-background);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__nav-item {
+  position: relative;
+  padding: 0 20px;
+}
+
+.header__nav-link,
+.header__nav-icon {
+  font-style: 16px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  transition: 0.3s ease;
+}
+
+.header__nav-link:hover,
+.header__nav-link:focus,
+.header__nav-link--active,
+.header__nav-icon:hover {
+  color: var(--color-text-hover);
+  fill: var(--color-text-hover);
+}
+
+.header__nav-link--active::after,
+.header__nav-link:hover::after,
+.header__nav-link:focus::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+  width: 30%;
+  height: 2px;
+  background: var(--color-text-hover);
+}
+`
